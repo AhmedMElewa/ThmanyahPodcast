@@ -58,18 +58,6 @@ dependencies {
     implementation(Navigation.navigation)
     implementation(Navigation.navigationFragment)
 
-    // retrofit
-    implementation(Retrofit.retrofit)
-    implementation(Retrofit.retrofitGson)
-    // okhttp
-    implementation(OkHttp.OkHttpInterceptor)
-    // room
-    implementation(Room.roomRuntime)
-    implementation(Room.roomKtx)
-    kapt(Room.roomKapt)
-    implementation(Room.roomPagging)
-    // paging
-    implementation(Pagging.pagging)
 
     // -------------------------------------------- lifecycle -------------------------------
     implementation(Lifecycle.coreLifeCycle)

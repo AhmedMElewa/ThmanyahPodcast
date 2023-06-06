@@ -24,26 +24,6 @@ object AndroidUI {
     const val materialDesign = "com.google.android.material:material:1.6.1"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.4"
 }
-object Retrofit {
-    const val retrofit_version = "2.9.0"
-    const val retrofit = "com.squareup.retrofit2:retrofit:$retrofit_version"
-    const val retrofitGson = "com.squareup.retrofit2:converter-gson:$retrofit_version"
-}
-object OkHttp {
-    const val ok_http_version = "4.9.3"
-    const val OkHttpInterceptor = "com.squareup.okhttp3:logging-interceptor:$ok_http_version"
-}
-object Room {
-    const val room_version = "2.4.3"
-    const val roomRuntime = "androidx.room:room-runtime:$room_version"
-    const val roomKtx = "androidx.room:room-ktx:$room_version"
-    const val roomKapt = "androidx.room:room-compiler:$room_version"
-    const val roomPagging = "androidx.room:room-paging:$room_version"
-}
-object Pagging {
-    const val paging_version = "3.1.1"
-    const val pagging = "androidx.paging:paging-runtime:$paging_version"
-}
 object Navigation {
     const val nav_version = "2.5.3"
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:$nav_version"
