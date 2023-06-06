@@ -1,8 +1,8 @@
-package com.elewa.thmanyahpodcast.modules.home.di
+package com.elewa.thmanyahpodcast.modules.playlist.di
 
 
-import com.elewa.thmanyahpodcast.modules.home.data.repository.PlayListRepositoryImpl
-import com.elewa.thmanyahpodcast.modules.home.domain.repository.PlayListRepository
+import com.elewa.thmanyahpodcast.modules.playlist.data.repository.PlayListRepositoryImpl
+import com.elewa.thmanyahpodcast.modules.playlist.domain.repository.PlayListRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

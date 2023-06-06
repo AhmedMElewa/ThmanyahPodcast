@@ -1,4 +1,4 @@
-package com.elewa.thmanyahpodcast.modules.home.domain.entity
+package com.elewa.thmanyahpodcast.modules.playlist.domain.entity
 
 data class EpisodeEntity(
     val id: String,

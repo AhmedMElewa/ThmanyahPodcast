@@ -1,17 +1,15 @@
-package com.elewa.thmanyahpodcast.modules.home.presnetation.ui
+package com.elewa.thmanyahpodcast.modules.playlist.presnetation.ui
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.elewa.thmanyahpodcast.R
 import com.elewa.thmanyahpodcast.base.BaseFragment
 import com.elewa.thmanyahpodcast.databinding.FragmentHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeFragment : BaseFragment<FragmentHomeBinding>() {
+class PlayListFragment : BaseFragment<FragmentHomeBinding>() {
 
     override val bindLayout: (LayoutInflater, ViewGroup?, Boolean) -> FragmentHomeBinding
         get() = FragmentHomeBinding::inflate

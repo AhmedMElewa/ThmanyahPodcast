@@ -1,9 +1,9 @@
-package com.elewa.thmanyahpodcast.modules.home.data.mapper
+package com.elewa.thmanyahpodcast.modules.playlist.data.mapper
 
-import com.elewa.thmanyahpodcast.modules.home.data.model.ApiResponse
-import com.elewa.thmanyahpodcast.modules.home.data.model.Episodes
-import com.elewa.thmanyahpodcast.modules.home.domain.entity.EpisodeEntity
-import com.elewa.thmanyahpodcast.modules.home.domain.entity.PlayListEntity
+import com.elewa.thmanyahpodcast.modules.playlist.data.model.ApiResponse
+import com.elewa.thmanyahpodcast.modules.playlist.data.model.Episodes
+import com.elewa.thmanyahpodcast.modules.playlist.domain.entity.EpisodeEntity
+import com.elewa.thmanyahpodcast.modules.playlist.domain.entity.PlayListEntity
 
 fun ApiResponse.toEntity() = PlayListEntity(
     id = data.playlist.id,

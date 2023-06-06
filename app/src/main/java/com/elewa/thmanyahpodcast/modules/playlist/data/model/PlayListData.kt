@@ -1,4 +1,4 @@
-package com.elewa.thmanyahpodcast.modules.home.data.model
+package com.elewa.thmanyahpodcast.modules.playlist.data.model
 
 import com.google.gson.annotations.SerializedName
 
