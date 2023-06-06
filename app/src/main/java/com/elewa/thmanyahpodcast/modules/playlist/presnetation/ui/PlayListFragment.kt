@@ -5,14 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.elewa.thmanyahpodcast.base.BaseFragment
-import com.elewa.thmanyahpodcast.databinding.FragmentHomeBinding
+import com.elewa.thmanyahpodcast.databinding.FragmentPlaylistBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class PlayListFragment : BaseFragment<FragmentHomeBinding>() {
+class PlayListFragment : BaseFragment<FragmentPlaylistBinding>() {
 
-    override val bindLayout: (LayoutInflater, ViewGroup?, Boolean) -> FragmentHomeBinding
-        get() = FragmentHomeBinding::inflate
+    override val bindLayout: (LayoutInflater, ViewGroup?, Boolean) -> FragmentPlaylistBinding
+        get() = FragmentPlaylistBinding::inflate
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
