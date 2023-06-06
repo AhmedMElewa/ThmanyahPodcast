@@ -58,6 +58,9 @@ dependencies {
     implementation(Navigation.navigation)
     implementation(Navigation.navigationFragment)
 
+    // gson
+    implementation(Retrofit.retrofitGson)
+
 
     // -------------------------------------------- lifecycle -------------------------------
     implementation(Lifecycle.coreLifeCycle)
