@@ -1,5 +1,7 @@
 package com.elewa.thmanyahpodcast.core.di
 
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -11,10 +13,11 @@ import javax.inject.Singleton
 @Module
 class NetworkModule {
 
+
     @Singleton
     @Provides
-    fun provideGsonConverter(): GsonConverterFactory {
-        return GsonConverterFactory.create()
+    fun provideMoshi(): Gson {
+        return GsonBuilder().create()
     }
 
 }

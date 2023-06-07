@@ -44,4 +44,29 @@
         <item name="android:textSize">8sp</item>
         <item name="android:textColor">#76787C</item>
     </style>
+
+    <style name="playlist_header">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontWeight">600</item>
+        <item name="lineHeight">38sp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="playlist_desc">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontWeight">400</item>
+        <item name="lineHeight">18sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="btn_style">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontWeight">400</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>

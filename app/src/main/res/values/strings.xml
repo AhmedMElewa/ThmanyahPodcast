@@ -2,7 +2,14 @@
     <string name="app_name">ThmanyahPodcast</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="library">Library</string>
-    <string name="search">Search</string>
-    <string name="home">Home</string>
+    <string name="library">المكتبة</string>
+    <string name="search">البحث</string>
+    <string name="home">الرئيسية</string>
+    <string name="diff_play">تشغيل متنوع</string>
+    <string name="playlist_header">مختارات متنوعة من بودكاست فنجان</string>
+    <string name="playlise_desc">كل يوم أحد. ضيف معي أنا عبدالرحمن أبومالح. في بودكاست فنجان، سنأخذ من كل مذاق رشفة. لا معايير، ولا مواضيع محددة، لكن الأكيد، هنا كثير من المتعة والفائدة.</string>
+    <string name="generic_error">حدث خطأ غير متوقع ، حاول مرة أخرى</string>
+    <string name="no_internet">لا يوجد اتصال بالانترنت</string>
+    <string name="epos">الحلقات</string>
+    <string name="retry">حاول مزة اخره</string>
 </resources>

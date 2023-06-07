@@ -26,7 +26,8 @@ class PlayListDS @Inject constructor(
             Timber.d(ioException)
         }
 
-        val listCountryType = object : TypeToken<List<ApiResponse>>() {}.type
+        val listCountryType = object : TypeToken<ApiResponse>() {}.type
+        Timber.i("APi Response",listCountryType.toString())
         return Gson().fromJson(jsonString, listCountryType)
     }
 

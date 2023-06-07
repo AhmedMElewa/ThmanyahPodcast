@@ -5,17 +5,28 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_marginEnd="@dimen/main_margin"
+        android:background="#E4E4E5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardImage"
         android:layout_width="76dp"
         android:layout_height="76dp"
-        android:layout_marginTop="@dimen/main_margin"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="@dimen/main_margin"
-        app:cardCornerRadius="@dimen/dimen_10dp"
         android:layout_marginBottom="@dimen/main_margin"
+        app:cardCornerRadius="@dimen/dimen_10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/view">
 
         <ImageView
             android:id="@+id/imgMedia"
@@ -29,35 +40,47 @@
     <TextView
         android:id="@+id/txtMediaHeader"
         style="@style/media_normal"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/main_margin"
+        android:textDirection="rtl"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:text="لماذا نتوقف شهرين قبل كأس العالم؟"
         app:layout_constraintEnd_toStartOf="@+id/cardImage"
+        app:layout_constraintStart_toEndOf="@+id/imgPlay"
         app:layout_constraintTop_toTopOf="@+id/cardImage" />
 
     <TextView
         android:id="@+id/txtMediaOwner"
         style="@style/media_gray"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textDirection="rtl"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/main_margin"
         android:text="مرتدة"
+        android:maxLines="1"
+        android:ellipsize="end"
         app:layout_constraintEnd_toStartOf="@+id/cardImage"
+        app:layout_constraintStart_toStartOf="@+id/txtMediaHeader"
         app:layout_constraintTop_toBottomOf="@+id/txtMediaHeader" />
 
 
     <TextView
         android:id="@+id/txtMediaDate"
         style="@style/media_date"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textDirection="rtl"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/main_margin"
         android:text="اكتوبر 2020 . 23 دقيقة"
+        android:maxLines="1"
+        android:ellipsize="end"
         app:layout_constraintEnd_toStartOf="@+id/cardImage"
+        app:layout_constraintStart_toStartOf="@+id/txtMediaOwner"
         app:layout_constraintTop_toBottomOf="@+id/txtMediaOwner" />
 
     <ImageView
