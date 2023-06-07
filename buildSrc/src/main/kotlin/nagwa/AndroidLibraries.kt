@@ -24,6 +24,11 @@ object AndroidUI {
     const val materialDesign = "com.google.android.material:material:1.6.1"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.4"
 }
+object Retrofit {
+    const val retrofit_version = "2.9.0"
+    const val retrofit = "com.squareup.retrofit2:retrofit:$retrofit_version"
+    const val retrofitGson = "com.squareup.retrofit2:converter-gson:$retrofit_version"
+}
 object Navigation {
     const val nav_version = "2.5.3"
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:$nav_version"

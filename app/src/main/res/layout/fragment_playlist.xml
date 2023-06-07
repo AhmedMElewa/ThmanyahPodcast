@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".modules.playlist.presnetation.ui.PlayListFragment"
+    app:layoutDescription="@xml/fragment_playlist_scene">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImage"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="@dimen/dimen_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMedia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:background="@tools:sample/backgrounds/scenic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradiant_bg"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_bg"
+                android:padding="12dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/circle_bg"
+                android:padding="12dp"
+                android:src="@drawable/ic_menu_h"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgFav" />
+
+            <ImageView
+                android:id="@+id/imgFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/circle_bg"
+                android:padding="11dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintStart_toEndOf="@+id/imgMenu"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/txtPlayListHeader"
+                style="@style/playlist_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/playlist_header"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imgFav"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/txtPlayDesc"
+                style="@style/playlist_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/playlise_desc"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imgFav"
+                app:layout_constraintTop_toBottomOf="@+id/txtPlayListHeader" />
+
+
+            <TextView
+                android:id="@+id/materialButton"
+                style="@style/btn_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:paddingStart="30dp"
+                android:gravity="center"
+                android:paddingEnd="50dp"
+                android:text="@string/diff_play"
+                app:layout_constraintBottom_toBottomOf="@+id/imgMedia"
+                app:layout_constraintEnd_toEndOf="@+id/txtPlayDesc"
+                app:layout_constraintTop_toBottomOf="@+id/txtPlayDesc" />
+
+
+            <ImageView
+                android:id="@+id/imgDiffPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:elevation="@dimen/dimen_10dp"
+                android:padding="11dp"
+                android:src="@drawable/ic_diff_play"
+                app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+                app:layout_constraintEnd_toEndOf="@+id/materialButton"
+                app:layout_constraintTop_toTopOf="@+id/materialButton" />
+
+            <ImageView
+                android:id="@+id/imgPlay"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_play"
+                app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+                app:layout_constraintStart_toStartOf="@+id/imgMenu"
+                app:layout_constraintTop_toTopOf="@+id/materialButton" />
+
+            <ImageView
+                android:id="@+id/imgDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow_down"
+                app:layout_constraintStart_toEndOf="@+id/imgPlay"
+                app:layout_constraintTop_toTopOf="@+id/imgPlay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRec"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="@dimen/dimen_10dp"
+        android:background="@color/white"
+        android:layout_marginTop="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardImage"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtEpo"
+                    style="@style/media_normal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/epos"
+                    android:textDirection="rtl"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/txtEpoCount"
+                    style="@style/media_gray"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="12 حلقة . 3 ساعات "
+                    android:textDirection="rtl"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtEpo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtEpo" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recPlayList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/txtEpo"
+                tools:listitem="@layout/item_media" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/layoutLoading"
+        layout="@layout/layout_loading"
+        />
+
+    <include
+        android:id="@+id/layoutError"
+        layout="@layout/layout_error_view"/>
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

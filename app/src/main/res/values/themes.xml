@@ -1,9 +1,72 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.ThmanyahPodcast" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.ThmanyahPodcast" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="primaryDialogs" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
     <style name="Theme.ThmanyahPodcast" parent="Base.Theme.ThmanyahPodcast" />
+
+
+
+    <style name="media_normal">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic_semi_bold</item>
+        <item name="fontWeight">600</item>
+        <item name="lineHeight">18sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#1C222B</item>
+    </style>
+
+    <style name="media_gray">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontWeight">400</item>
+        <item name="lineHeight">15sp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#76787C</item>
+    </style>
+
+    <style name="media_date">
+        <item name="fontFamily">@font/imb_plex_sans_arabic_light</item>
+        <item name="fontWeight">300</item>
+        <item name="lineHeight">18sp</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">#76787C</item>
+    </style>
+
+    <style name="playlist_header">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic_semi_bold</item>
+        <item name="fontWeight">600</item>
+        <item name="lineHeight">38sp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="playlist_desc">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontWeight">400</item>
+        <item name="lineHeight">18sp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="btn_style">
+        <item name="fontFamily">@font/ibm_plex_sans_arabic_medium</item>
+        <item name="fontWeight">400</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>
