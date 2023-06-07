@@ -83,6 +83,7 @@ class PlayListFragment : BaseFragment<FragmentPlaylistBinding>() {
                 viewModel.uiEffects.collectLatest { effect ->
                     when (effect) {
                         is PlayListSideEffects.Error -> {
+                            binding.layoutLoading.clLoading.toGone()
                             binding.layoutError.clError.toVisible()
                             binding.layoutError.tvError.setText(effect.message)
                         }

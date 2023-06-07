@@ -91,13 +91,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtPlayListHeader" />
 
 
-            <com.google.android.material.button.MaterialButton
+            <TextView
                 android:id="@+id/materialButton"
                 style="@style/btn_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_bg"
                 android:paddingStart="30dp"
+                android:gravity="center"
                 android:paddingEnd="50dp"
                 android:text="@string/diff_play"
                 app:layout_constraintBottom_toBottomOf="@+id/imgMedia"
@@ -123,6 +124,7 @@
                 android:layout_height="38dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_play"
+                app:layout_constraintBottom_toBottomOf="@+id/materialButton"
                 app:layout_constraintStart_toStartOf="@+id/imgMenu"
                 app:layout_constraintTop_toTopOf="@+id/materialButton" />
 

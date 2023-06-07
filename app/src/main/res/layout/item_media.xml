@@ -42,12 +42,13 @@
         style="@style/media_normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/main_margin"
-        android:textDirection="rtl"
-        android:maxLines="1"
         android:ellipsize="end"
+        android:maxLines="1"
         android:text="لماذا نتوقف شهرين قبل كأس العالم؟"
+        android:textDirection="rtl"
         app:layout_constraintEnd_toStartOf="@+id/cardImage"
         app:layout_constraintStart_toEndOf="@+id/imgPlay"
         app:layout_constraintTop_toTopOf="@+id/cardImage" />
@@ -90,14 +91,15 @@
         android:layout_marginStart="@dimen/main_margin"
         android:src="@drawable/ic_menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardImage" />
+        app:layout_constraintTop_toTopOf="@+id/imgPlay" />
 
     <ImageView
         android:id="@+id/imgPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_play"
         android:scaleType="centerCrop"
+        android:src="@drawable/ic_play"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMediaHeader"
         app:layout_constraintStart_toEndOf="@+id/imgMenu"
-        app:layout_constraintTop_toTopOf="@+id/cardImage" />
+        app:layout_constraintTop_toTopOf="@+id/txtMediaHeader" />
 </androidx.constraintlayout.widget.ConstraintLayout>

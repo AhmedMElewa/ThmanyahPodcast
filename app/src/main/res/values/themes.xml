@@ -22,7 +22,7 @@
 
 
     <style name="media_normal">
-        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontFamily">@font/ibm_plex_sans_arabic_semi_bold</item>
         <item name="fontWeight">600</item>
         <item name="lineHeight">18sp</item>
         <item name="android:textSize">12sp</item>
@@ -38,7 +38,7 @@
     </style>
 
     <style name="media_date">
-        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontFamily">@font/imb_plex_sans_arabic_light</item>
         <item name="fontWeight">300</item>
         <item name="lineHeight">18sp</item>
         <item name="android:textSize">8sp</item>
@@ -46,7 +46,7 @@
     </style>
 
     <style name="playlist_header">
-        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontFamily">@font/ibm_plex_sans_arabic_semi_bold</item>
         <item name="fontWeight">600</item>
         <item name="lineHeight">38sp</item>
         <item name="android:textSize">22sp</item>
@@ -62,7 +62,7 @@
     </style>
 
     <style name="btn_style">
-        <item name="fontFamily">@font/ibm_plex_sans_arabic</item>
+        <item name="fontFamily">@font/ibm_plex_sans_arabic_medium</item>
         <item name="fontWeight">400</item>
         <item name="lineHeight">20sp</item>
         <item name="android:textSize">15sp</item>
